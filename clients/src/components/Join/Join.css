@@ -1,0 +1,104 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  #root {
+    height: 100%;
+    max-height: 100vh;
+}
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .joinOuterContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #1A1A1D;
+  }
+  
+  .joinInnerContainer {
+    width: 20%;
+  }
+  
+  .joinInput {
+    border-radius: 0;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    padding: 15px 20px;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .joinInput:focus {
+    border-color: #2979FF;
+    outline: none;
+}
+  
+  .heading {
+    color: white;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+  }
+  
+  .button {
+      color: #fff !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: #2979FF;
+      padding: 20px;
+      border-radius: 5px;
+      display: inline-block;
+      border: none;
+      width: 100%;
+      cursor: pointer;
+  }
+  .button:focus {
+    outline: 2px solid #2979FF; /* Adds visible focus indicator */
+    outline-offset: 2px;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 10px;
+  text-align: center;
+}
+
+  
+  .mt-20 {
+    margin-top: 20px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .joinOuterContainer {
+      height: 100%;
+    }
+  
+    .joinInnerContainer {
+      width: 90%;
+    }
+  
+    @media (max-width: 480px) {
+      .joinOuterContainer {
+          flex-direction: column;
+          justify-content: flex-start;
+          padding-top: 20px;
+      }
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    .joinInnerContainer {
+        width: 60%; /* Adjust width for tablets */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .joinInnerContainer {
+        width: 40%; /* Adjust width for small desktops */
+    }
+}
+  }

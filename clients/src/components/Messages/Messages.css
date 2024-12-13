@@ -1,0 +1,8 @@
+/* Messages.css */
+.messages {
+  height: 400px; /* Or any fixed height you need */
+  overflow: auto; /* Enables scrolling */
+  display: flex;
+  flex-direction: column;
+  background: white;
+}

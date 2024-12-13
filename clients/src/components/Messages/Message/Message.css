@@ -1,0 +1,101 @@
+.messageBox {
+  background: #F3F3F3;
+  border-radius: 20px;
+  padding: 10px 20px; /* Increased padding for better spacing */
+   color: white;
+  display: inline-block;
+  max-width: 80%;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.messageText {
+  width: 100%;
+  letter-spacing: 0;
+  font-size: 1.1em;
+  word-wrap: break-word;
+  color: inherit; /* Ensure text color adapts dynamically */
+}
+
+.messageText img {
+  vertical-align: middle;
+  max-height: 30px; /* Limit emoji size */
+}
+
+.messageContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 5%;
+  margin-top: 5px;
+}
+
+.sentText {
+  display: flex;
+  align-items: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+  color: #828282;
+  letter-spacing: 0.3px;
+  margin: 0; /* Avoid additional spacing */
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.justifyStart {
+  justify-content: flex-start;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.colorDark {
+  color: #353535;
+}
+
+.backgroundBlue {
+  background: #2979FF;
+}
+
+.backgroundLight {
+  background: #F3F3F3;
+}
+
+/* Add responsiveness for better spacing on smaller screens */
+@media (max-width: 768px) {
+  .messageBox {
+      max-width: 90%; /* Increase width for smaller devices */
+  }
+  .messageText {
+      font-size: 1em; /* Adjust font size for readability */
+  }
+}
+
+
+.messageContainer {
+  display: flex;
+  padding: 5px 5%;
+  margin-top: 5px;
+}
+
+.justifyCenter {
+  justify-content: center; /* Center admin messages */
+}
+
+.adminMessage {
+  text-align: center;
+  color: black; /* Center-align admin text */
+  font-style: italic; /* Optional: Make admin messages visually distinct */
+  border: 1px solid #ddd; /* Optional: Add a subtle border */
+  padding: 10px 20px;
+  max-width: 60%; /* Limit width for readability */
+}
